@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" TextQuality="Regular" ReportInfo.Description="Demonstrates simple list report. To create it:&#13;&#10;&#13;&#10;- go to &quot;Data&quot; menu and select &quot;Choose Report Data...&quot; item to select datasource;&#13;&#10;&#13;&#10;- go to &quot;Report|Configure Bands...&quot; menu to create the band structure;&#13;&#10;&#13;&#10;- return to the report page, doubleclick the data band to show its editor;&#13;&#10;&#13;&#10;- choose the datasource;&#13;&#10;&#13;&#10;- drag data from the Data Dictionary window to the band." ReportInfo.Created="01/17/2008 03:05:57" ReportInfo.Modified="11/24/2015 11:01:44" ReportInfo.CreatorVersion="1.9.1.0">
+  <Dictionary>
+    <OdbcDataConnection Name="Connection" ConnectionString="rijcmlqDsfwzqmpop0DqfGfr49Br5r/xSO0Ogz68NnBRUs0/GWYrbuvO60Xe6CTJmyC/InD7lZ5FfkkGt+DPBIy2fyN1mDt1cuEO1xIQ406FtV8hvmDsB+oxqKsCHfxWt3eFDkc">
+      <TableDataSource Name="Table" Alias="Tamami" DataType="System.Int32" Enabled="true" SelectCommand="SELECT B.OlusturmaTarihi, kr.Adi,br.Adi,B.Konu, B.BasvuruYolu, B.Mesaj, B.Tur, B.EPosta, B.Gsm, B.TcId, B.Ip, B.GrupId,B.CevapTarihi, B.Durum,B.CevapMesaji, B.Ad, B.Soyad,gr.Adi&#13;&#10;FROM bildirimler B&#13;&#10; left join kurumlar kr on kr.id=B.KurumId&#13;&#10;left join birimler br on br.id=B.BirimId&#13;&#10;left join gruplar gr on gr.id=B.GrupId&#13;&#10;">
+        <Column Name="OlusturmaTarihi" DataType="System.DateTime"/>
+        <Column Name="Adi1" DataType="System.String"/>
+        <Column Name="Konu" DataType="System.String"/>
+        <Column Name="BasvuruYolu" DataType="System.Int32"/>
+        <Column Name="Mesaj" DataType="System.String"/>
+        <Column Name="Tur" DataType="System.Int32"/>
+        <Column Name="EPosta" DataType="System.String"/>
+        <Column Name="Gsm" DataType="System.String"/>
+        <Column Name="TcId" DataType="System.String"/>
+        <Column Name="Ip" DataType="System.String"/>
+        <Column Name="GrupId" DataType="System.Int32"/>
+        <Column Name="Durum" DataType="System.Int32"/>
+        <Column Name="Ad" DataType="System.String"/>
+        <Column Name="Soyad" DataType="System.String"/>
+        <Column Name="Adi2" DataType="System.String"/>
+        <Column Name="Column" DataType="System.Int32" Calculated="true" Expression=""/>
+        <Column Name="Column1" DataType="System.Int32" Calculated="true" Expression=""/>
+        <Column Name="Adi" DataType="System.String"/>
+        <Column Name="CevapMesaji" DataType="System.String"/>
+        <Column Name="CevapTarihi" DataType="System.DateTime"/>
+      </TableDataSource>
+    </OdbcDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="66.15">
+      <TextObject Name="Text1" Left="-9.45" Top="9.45" Width="718.2" Height="37.8" Text="T.C. SAĞLIK BAKANLIĞI TÜRKİYE KAMU HASTANELERİ KURUMU" HorzAlign="Center" VertAlign="Center" Font="Tahoma, 14pt, style=Bold"/>
+      <TextObject Name="Text8" Left="113.4" Top="47.25" Width="463.05" Height="18.9" Text="[Tamami.Adi]" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="70.15" Width="718.2" Height="670.95" CanGrow="true" CanShrink="true" DataSource="Table">
+      <TextObject Name="Text11" Left="453.6" Top="9.45" Width="94.5" Height="18.9" Text="Bildirim Tarihi:&#13;&#10;" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text12" Left="85.05" Top="75.6" Width="94.5" Height="18.9" Text="Gönderen Adı:&#13;&#10;&#13;&#10;" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text13" Left="85.05" Top="264.6" Width="85.05" Height="18.9" Text="Grup Adi:&#13;&#10;" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text2" Left="548.1" Top="9.45" Width="170.1" Height="18.9" Text="[Tamami.OlusturmaTarihi]" Format="Date" Format.Format="d"/>
+      <TextObject Name="Text4" Left="189" Top="75.6" Width="179.55" Height="18.9" CanShrink="true" Text="[Tamami.Ad]"/>
+      <TextObject Name="Text6" Left="189" Top="264.6" Width="463.05" Height="18.9" Text="[Tamami.Adi2]"/>
+      <TextObject Name="Text15" Left="85.05" Top="302.4" Width="94.5" Height="18.9" Text="Bildirim Mesajı:" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text16" Left="189" Top="302.4" Width="463.05" Height="255.15" CanShrink="true" Text="[Tamami.Mesaj]"/>
+      <TextObject Name="Text19" Left="85.05" Top="37.8" Width="85.05" Height="18.9" Text="Gönderen TC:&#13;&#10;&#13;&#10;" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text20" Left="189" Top="37.8" Width="463.05" Height="18.9" Text="[Tamami.TcId]"/>
+      <TextObject Name="Text23" Left="378" Top="75.6" Width="274.05" Height="18.9" CanShrink="true" Text="[Tamami.Soyad]"/>
+      <TextObject Name="Text7" Left="85.05" Top="113.4" Width="85.05" Height="18.9" Text="Telefon:" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text3" Left="189" Top="113.4" Width="463.05" Height="18.9" Text="[Tamami.Gsm]"/>
+      <TextObject Name="Text14" Left="85.05" Top="151.2" Width="85.05" Height="18.9" Text="E-Mail Adres:" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text9" Left="189" Top="151.2" Width="463.05" Height="18.9" Text="[Tamami.EPosta]"/>
+      <TextObject Name="Text24" Left="85.05" Top="189" Width="103.95" Height="18.9" Text="Bildirim Konusu:&#13;&#10;" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text17" Left="189" Top="189" Width="463.05" Height="18.9" Text="[Tamami.Konu]"/>
+      <TextObject Name="Text25" Left="85.05" Top="226.8" Width="85.05" Height="18.9" Text="Birim Adi:&#13;&#10;" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text5" Left="189" Top="226.8" Width="463.05" Height="18.9" Text="[Tamami.Adi1]"/>
+      <TextObject Name="Text26" Left="85.05" Top="604.8" Width="94.5" Height="18.9" Text="Cevap Mesajı:" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text10" Left="189" Top="604.8" Width="463.05" Height="56.7" CanShrink="true" Text="[Tamami.CevapMesaji]"/>
+      <TextObject Name="Text27" Left="85.05" Top="576.45" Width="94.5" Height="18.9" Text="Cevap Tarihi:" Font="Tahoma, 8pt, style=Bold"/>
+      <TextObject Name="Text18" Left="189" Top="576.45" Width="463.05" Height="18.9" Text="[Tamami.CevapTarihi]" Format="Date" Format.Format="d"/>
+      <ChildBand Name="Child1" Top="745.1" Width="718.2" Height="37.8"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="786.9" Width="718.2" Height="340.2"/>
+  </ReportPage>
+</Report>

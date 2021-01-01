@@ -1,0 +1,68 @@
+﻿#unlicensed {
+    display: none !important;
+}
+
+.kurum {
+    background-image: url("../Resource/images/Istatistik.png");
+}
+
+.istatistik {
+    background-image: url("../Resource/images/kuruma.png");
+}.graph {
+    background-image: url("../Resource/images/graph.png");
+}
+
+.bildirmekle {
+    background-image: url("../Resource/images/27.png");
+}
+
+.bildirimsorgula {
+    background-image: url("../Resource/images/analysis.png");
+}
+.bildirimhesapla {
+    background-image: url("../Resource/images/bilhesapla.png");
+}
+
+.user {
+    background-image: url("../Resource/images/user.png");
+}
+
+.key {
+    background-image: url("../Resource/images/key.png");
+}
+
+.close {
+    background-image: url("../Resource/images/close.png");
+}
+
+.birlik {
+    background-image: url("../Resource/images/birlik.png");
+}
+
+.add1 {
+    background-image: url("../Resource/images/add.png");
+}
+
+.update {
+    background-image: url("../Resource/images/update.png");
+}
+
+.save {
+    background-image: url("../Resource/images/save.png");
+}
+
+.yetkilistele {
+    background-image: url("../Resource/images/yetkilistele.png");
+}
+
+.accept {
+    background: url('../Resource/images/accept.png') no-repeat;
+}
+
+.temizle {
+    background: url('../Resource/images/temizle.png') no-repeat;
+}
+
+.silinen {
+    background: url('../Resource/images/silinen.png') no-repeat;
+}

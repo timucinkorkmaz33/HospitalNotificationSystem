@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HastaneOneriSvc", "HastaneOneri\HastaneOneriSvc.csproj", "{A7EEDF25-15E3-495D-A5E4-520D0DEFEA68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HastaneOneriEntity", "HastaneOneriEntity\HastaneOneriEntity.csproj", "{AAFA3AFE-3029-4672-9326-3FEEC2CF4915}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HastaneOneriWeb", "HastaneOneriWeb\HastaneOneriWeb.csproj", "{A998C6D7-01F0-4461-847F-0B106F57F890}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7EEDF25-15E3-495D-A5E4-520D0DEFEA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EEDF25-15E3-495D-A5E4-520D0DEFEA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EEDF25-15E3-495D-A5E4-520D0DEFEA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EEDF25-15E3-495D-A5E4-520D0DEFEA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFA3AFE-3029-4672-9326-3FEEC2CF4915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFA3AFE-3029-4672-9326-3FEEC2CF4915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFA3AFE-3029-4672-9326-3FEEC2CF4915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFA3AFE-3029-4672-9326-3FEEC2CF4915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A998C6D7-01F0-4461-847F-0B106F57F890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A998C6D7-01F0-4461-847F-0B106F57F890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A998C6D7-01F0-4461-847F-0B106F57F890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A998C6D7-01F0-4461-847F-0B106F57F890}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
